@@ -144,7 +144,8 @@ export default function Home() {
         <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
           <div className='text-center'>
             <h2 className='text-4xl font-bold text-white mb-8'>Education</h2>
-            <div className='max-w-4xl mx-auto'>
+            <div className='max-w-4xl mx-auto space-y-6'>
+              {/* Current Education - NTNU */}
               <div className='bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-slate-700'>
                 <div className='flex flex-col md:flex-row items-center gap-6'>
                   <div className='flex-shrink-0'>
@@ -163,6 +164,29 @@ export default function Home() {
                       Trondheim, Norway
                     </p>
                     <p className='text-slate-400'>Expected Graduation: 2026</p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Previous Education - Lillestrøm */}
+              <div className='bg-gradient-to-r from-slate-700/20 to-slate-600/20 rounded-2xl p-8 border border-slate-700'>
+                <div className='flex flex-col md:flex-row items-center gap-6'>
+                  <div className='flex-shrink-0'>
+                    <div className='w-16 h-16 bg-slate-600 rounded-xl flex items-center justify-center'>
+                      <span className='text-white font-bold text-2xl'>📚</span>
+                    </div>
+                  </div>
+                  <div className='text-center md:text-left'>
+                    <h3 className='text-2xl font-semibold text-white mb-2'>
+                      Studiespesialisering
+                    </h3>
+                    <p className='text-slate-300 text-lg font-medium mb-2'>
+                      Lillestrøm Videregående Skole
+                    </p>
+                    <p className='text-slate-400 text-lg mb-2'>
+                      Specialization in Sciences and Informatics
+                    </p>
+                    <p className='text-slate-500'>Completed</p>
                   </div>
                 </div>
               </div>
