@@ -5,3 +5,6 @@ onlyBuiltDependencies:
   - '@tailwindcss/oxide'
   - prisma
   - sharp
+
+packages:
+  - .
