@@ -57,9 +57,10 @@ export default function Home() {
             <div className='space-y-8'>
               <div className='space-y-4'>
                 <p className='text-blue-400 text-lg font-medium'>Hello, I'm</p>
-                <h1 className='text-5xl lg:text-6xl font-bold text-white leading-tight'>
+                <h1 className='text-5xl lg:text-6xl font-bold text-white leading-tight -mt-4'>
                   Anders Morille
                 </h1>
+
                 <h2 className='text-3xl lg:text-4xl font-semibold text-blue-400'>
                   Full Stack Developer
                 </h2>
@@ -85,19 +86,23 @@ export default function Home() {
               {/* Social Links */}
               <div className='flex space-x-6'>
                 <Link
-                  href='#'
+                  href='https://github.com/lille-morille?tab=repositories&q=&type=&language=&sort='
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-slate-400 hover:text-blue-400 transition-colors'
                 >
                   <Github className='w-6 h-6' />
                 </Link>
                 <Link
-                  href='#'
+                  href='https://www.linkedin.com/in/anders-morille/'
+                  target='_blank'
+                  rel='noopener noreferrer'
                   className='text-slate-400 hover:text-blue-400 transition-colors'
                 >
                   <Linkedin className='w-6 h-6' />
                 </Link>
                 <Link
-                  href='#'
+                  href='mailto:anders.morille@gmail.com'
                   className='text-slate-400 hover:text-blue-400 transition-colors'
                 >
                   <Mail className='w-6 h-6' />
@@ -128,6 +133,38 @@ export default function Home() {
                 {/* Decorative Elements */}
                 <div className='absolute -top-4 -right-4 w-72 h-72 bg-blue-600/10 rounded-full blur-3xl'></div>
                 <div className='absolute -bottom-4 -left-4 w-72 h-72 bg-purple-600/10 rounded-full blur-3xl'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className='py-20 bg-slate-900/50'>
+        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+          <div className='text-center'>
+            <h2 className='text-4xl font-bold text-white mb-8'>Education</h2>
+            <div className='max-w-4xl mx-auto'>
+              <div className='bg-gradient-to-r from-blue-600/10 to-purple-600/10 rounded-2xl p-8 border border-slate-700'>
+                <div className='flex flex-col md:flex-row items-center gap-6'>
+                  <div className='flex-shrink-0'>
+                    <div className='w-16 h-16 bg-blue-600 rounded-xl flex items-center justify-center'>
+                      <span className='text-white font-bold text-2xl'>🎓</span>
+                    </div>
+                  </div>
+                  <div className='text-center md:text-left'>
+                    <h3 className='text-2xl font-semibold text-white mb-2'>
+                      Bachelor of Computer Engineering
+                    </h3>
+                    <p className='text-blue-400 text-lg font-medium mb-2'>
+                      Norwegian University of Science and Technology (NTNU)
+                    </p>
+                    <p className='text-slate-300 text-lg mb-2'>
+                      Trondheim, Norway
+                    </p>
+                    <p className='text-slate-400'>Expected Graduation: 2026</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
