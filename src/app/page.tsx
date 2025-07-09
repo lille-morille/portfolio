@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
 import {
-  Github,
-  Linkedin,
   Mail,
   ArrowRight,
   Download,
@@ -15,8 +13,21 @@ import {
   Zap,
   Layers,
   Terminal,
+  Hash,
   Wrench,
+  Figma,
+  Coffee,
 } from "lucide-react";
+import { FaLinkedin, FaLinkedinIn } from "react-icons/fa";
+
+import {
+  SiPython,
+  SiDart,
+  SiTypescript,
+  SiRust,
+  SiGithub,
+} from "@icons-pack/react-simple-icons";
+import LinkedInIcon from "./_components/icon/linked-in";
 
 export default function Home() {
   return (
@@ -81,7 +92,7 @@ export default function Home() {
                   Full Stack Developer
                 </h2>
                 <p className='text-slate-300 text-lg max-w-md leading-relaxed'>
-                  I create exceptional digital experiences with modern web
+                  I create exceptional digital experiences with modern
                   technologies. Passionate about building scalable applications
                   and beautiful user interfaces.
                 </p>
@@ -107,7 +118,7 @@ export default function Home() {
                   rel='noopener noreferrer'
                   className='text-slate-400 hover:text-blue-400 transition-colors'
                 >
-                  <Github className='w-6 h-6' />
+                  <SiGithub className='w-6 h-6' />
                 </Link>
                 <Link
                   href='https://www.linkedin.com/in/anders-morille/'
@@ -115,7 +126,7 @@ export default function Home() {
                   rel='noopener noreferrer'
                   className='text-slate-400 hover:text-blue-400 transition-colors'
                 >
-                  <Linkedin className='w-6 h-6' />
+                  <FaLinkedin className='w-6 h-6' />
                 </Link>
                 <Link
                   href='mailto:anders.morille@gmail.com'
@@ -194,7 +205,7 @@ export default function Home() {
                   </div>
                   <div className='text-center md:text-left'>
                     <h3 className='text-2xl font-semibold text-white mb-2'>
-                      Studiespesialisering
+                      Specialization in General Studies
                     </h3>
                     <p className='text-slate-300 text-lg font-medium mb-2'>
                       Lillestrøm Videregående Skole
@@ -249,6 +260,10 @@ export default function Home() {
                 <div className='flex items-center gap-3'>
                   <Layers className='w-5 h-5 text-blue-400' />
                   <span className='text-slate-300'>Tailwind CSS</span>
+                </div>
+                <div className='flex items-center gap-3'>
+                  <Figma className='w-5 h-5 text-blue-400' />
+                  <span className='text-slate-300'>Figma</span>
                 </div>
               </div>
             </div>
@@ -305,56 +320,32 @@ export default function Home() {
               </div>
               <div className='space-y-4'>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <Coffee className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>Java</span>
                 </div>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <Hash className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>C#</span>
                 </div>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <SiPython className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>Python</span>
                 </div>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <SiDart className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>Dart</span>
                 </div>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <SiTypescript className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>
                     TypeScript / JavaScript
                   </span>
                 </div>
                 <div className='flex items-center gap-3'>
-                  <Code className='w-5 h-5 text-green-400' />
+                  <SiRust className='w-5 h-5 text-green-400' />
                   <span className='text-slate-300'>Rust</span>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Stats Section */}
-      <section className='py-20 bg-slate-800/50'>
-        <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
-          <div className='grid grid-cols-2 md:grid-cols-4 gap-8'>
-            <div className='text-center'>
-              <div className='text-3xl font-bold text-blue-400'>50+</div>
-              <div className='text-slate-300 mt-2'>Projects</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-bold text-blue-400'>3+</div>
-              <div className='text-slate-300 mt-2'>Years Experience</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-bold text-blue-400'>30+</div>
-              <div className='text-slate-300 mt-2'>Happy Clients</div>
-            </div>
-            <div className='text-center'>
-              <div className='text-3xl font-bold text-blue-400'>100%</div>
-              <div className='text-slate-300 mt-2'>Client Satisfaction</div>
             </div>
           </div>
         </div>
