@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Github, Linkedin, Mail, ArrowRight, Download } from "lucide-react";
 
 export default function Home() {
@@ -110,10 +111,17 @@ export default function Home() {
                 {/* Gradient Background */}
                 <div className='absolute inset-0 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full blur-2xl opacity-20'></div>
 
-                {/* Profile Image Placeholder */}
-                <div className='relative w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center'>
-                  <div className='text-white text-2xl font-bold'>
-                    Your Photo
+                {/* Profile Image */}
+                <div className='relative w-80 h-80 lg:w-96 lg:h-96 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 p-2'>
+                  <div className='w-full h-full rounded-full overflow-hidden bg-gradient-to-br from-slate-700 to-slate-900'>
+                    <Image
+                      src='/profile.png'
+                      alt='Anders Morille - Full Stack Developer'
+                      width={384}
+                      height={384}
+                      className='w-full h-full object-cover'
+                      priority
+                    />
                   </div>
                 </div>
 
